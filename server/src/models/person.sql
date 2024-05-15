@@ -1,0 +1,5 @@
+CREATE TABLE person(
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    login VARCHAR NOT NULL UNIQUE,
+    password VARCHAR NOT NULL   
+);

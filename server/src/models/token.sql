@@ -1,0 +1,6 @@
+CREATE TABLE token(
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    refreshToken VARCHAR NOT NULL,
+    personId INTEGER NOT NULL UNIQUE,
+    FOREIGN KEY (personId) REFERENCES person(id)
+);
